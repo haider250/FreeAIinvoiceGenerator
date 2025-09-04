@@ -1,0 +1,717 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+    <title>Free Online Invoice Generator | Create & Export Professional Invoices</title>
+<meta name="description" content="Create professional invoices in seconds with our free online invoice generator. Add logo, signature, tax/VAT, and payment details. Export as PDF or print instantly. Perfect for freelancers & small businesses.">
+<meta name="keywords" content="Invoice Generator, Free Invoice Maker, Online Invoice Creator, Freelancer Invoice Tool, Invoice PDF Export, Simple Invoice Template, Invoice with Tax, Quick Invoice Maker, Professional Invoice Generator">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/invoice-generator">
+<meta property="og:title" content="Free Online Invoice Generator | Simple & Professional Invoices">
+<meta property="og:description" content="Easily create invoices online. Auto-calculate totals, add logo/signature, save drafts, and export as PDF. 100% free & perfect for freelancers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/invoice-generator">
+<meta property="og:image" content="https://yourdomain.com/assets/invoice-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Invoice Generator for Freelancers & Small Businesses">
+<meta name="twitter:description" content="Create, save & send invoices online with our free tool. Export to PDF, add logo, tax, and payment instructions. Fast & professional.">
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0iUkkApMTgjuSZHODXQThAl-7DKquSIsuN9BAqaUEfRy_bL1kX7OghRaAGBfIRtulUJZwpIn5PFVzHvqhl7rZMhQcywa9slSD9j9BXLQ8Tk3SyPoGZzz5_e8mriee_nAk7aM89u3Q1OSiiHAm_clmwksKXCmeu1iysysbP3OKQaYo6KZKhmmWEsj4wnOj/s1280/Google_AI_Studio_2025-08-19T12_16_27.493Z.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="896" data-original-width="1280" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0iUkkApMTgjuSZHODXQThAl-7DKquSIsuN9BAqaUEfRy_bL1kX7OghRaAGBfIRtulUJZwpIn5PFVzHvqhl7rZMhQcywa9slSD9j9BXLQ8Tk3SyPoGZzz5_e8mriee_nAk7aM89u3Q1OSiiHAm_clmwksKXCmeu1iysysbP3OKQaYo6KZKhmmWEsj4wnOj/s320/Google_AI_Studio_2025-08-19T12_16_27.493Z.png"/></a></div>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .ad-sidebar, .ad-banner, .ad-footer, .ad-inline {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            color: #666;
+            text-align: center;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ad-sidebar {
+            width: 160px;
+            min-width: 160px;
+            height: 600px;
+            margin: 20px;
+            flex-shrink: 0;
+        }
+        .ad-banner {
+            width: 728px;
+            height: 90px;
+            margin-top: 10px;
+        }
+        .ad-footer {
+            width: 100%;
+            height: 90px;
+            margin-top: 20px;
+        }
+        .ad-inline {
+            width: 300px;
+            height: 250px;
+            margin: 20px auto;
+        }
+        .container {
+            max-width: 850px;
+            width: 100%;
+            margin: 20px 0;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            flex-grow: 1;
+        }
+        @media (max-width: 1200px) {
+            .ad-sidebar, .ad-banner, .ad-footer, .ad-inline {
+                display: none;
+            }
+            body {
+                padding: 20px;
+            }
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .tool-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 320px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+        }
+        .invoice-details, .service-item, .payment-info {
+            margin-bottom: 25px;
+            border: 1px solid #e0e6ed;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .invoice-details label, .service-item label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .invoice-details input[type="text"],
+        .invoice-details input[type="date"],
+        .service-item input[type="text"],
+        .service-item input[type="number"],
+        .service-item textarea,
+        .currency-select {
+            width: calc(100% - 22px);
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #cdd4da;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .invoice-details input[type="text"]:focus,
+        .invoice-details input[type="date"]:focus,
+        .service-item input[type="text"]:focus,
+        .service-item input[type="number"]:focus,
+        .service-item textarea:focus,
+        .currency-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+        .service-item .row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        .service-item .row > div {
+            flex: 1;
+        }
+        .total-section {
+            text-align: right;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e6ed;
+        }
+        .total-section div {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .total-section span {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #0056b3;
+        }
+        .total-section input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.2);
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .buttons button {
+            background-color: #007bff;
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.05em;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            flex-grow: 1;
+            max-width: 200px;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .buttons button:active {
+            transform: translateY(0);
+        }
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+            position: relative;
+            padding-top: 20px;
+        }
+        .signature img {
+            max-width: 220px;
+            height: auto;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .upload-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .upload-btn:hover {
+            background-color: #5a6268;
+        }
+        .logo-upload, .signature-upload {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .logo-upload .logo, .signature-upload img {
+            display: block;
+            margin: 15px auto;
+            max-width: 180px;
+            max-height: 120px;
+            border: 1px solid #ddd;
+            padding: 8px;
+            box-sizing: border-box;
+            object-fit: contain;
+        }
+        .signature-upload img {
+            max-width: 220px;
+            max-height: 120px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+        .payment-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .payment-info li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .payment-info li strong {
+            color: #2c3e50;
+        }
+        .payment-info span[contenteditable="true"] {
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 2px;
+            min-width: 100px;
+            display: inline-block;
+        }
+        .payment-info span[contenteditable="true"]:focus {
+            border-bottom: 1px solid #007bff;
+            outline: none;
+        }
+        @media print {
+            body {
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            .buttons, .save-draft-btn, .load-draft-btn, .duplicate-invoice-btn, .reset-btn,
+            .upload-btn, .logo-upload input[type="file"], .signature-upload input[type="file"],
+            .ad-sidebar, .ad-banner, .ad-footer, .ad-inline {
+                display: none !important;
+            }
+            .logo-upload .logo, .signature-upload img {
+                border: none;
+                padding: 0;
+            }
+            .signature {
+                text-align: right;
+                margin-top: 20px;
+                position: relative;
+                padding-top: 0;
+            }
+            .signature img {
+                position: absolute;
+                right: 0;
+                bottom: 40px;
+                max-width: 180px;
+                height: auto;
+                z-index: 0;
+            }
+            .signature #signatureLine {
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+            }
+            .invoice-details input, .service-item input, .service-item textarea, .payment-info span {
+                border: none !important;
+                background: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: auto !important;
+                box-shadow: none !important;
+            }
+            .invoice-details label, .service-item label {
+                font-weight: normal;
+                color: #333;
+            }
+            .payment-info span[contenteditable="true"] {
+                border-bottom: none !important;
+            }
+            .currency-selection {
+                display: none !important;
+            }
+            #printComment {
+                display: block !important;
+                page-break-before: auto;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-banner">
+        <p>Banner Ad Space (728x90)</p>
+    </div>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <div class="ad-sidebar left-ad">
+            <p>Left Sidebar Ad (160x600)</p>
+        </div>
+        <div class="container">
+            <img alt="Free Invoice Generator Tool" class="tool-image" src="https://cdn.pixabay.com/photo/2017/01/10/19/05/calculator-1979823_1280.png" />
+            <div class="header">
+                <div class="logo-upload">
+                    <label class="upload-btn" for="logoUpload">Upload Logo</label>
+                    <input accept="image/*" id="logoUpload" style="display: none;" type="file" />
+                    <img alt="Freelancer Logo" class="logo" id="freelancerLogo" src="https://images.unsplash.com/photo-1517292987714-023b86472ed4?q=80&amp;w=180&amp;h=120&amp;fit=crop&amp;auto=format&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+                <h1>Invoice</h1>
+            </div>
+            <div class="ad-inline">
+                <p>Inline Ad (300x250)</p>
+            </div>
+            <div class="invoice-details">
+                <label for="clientName">Client Name:</label>
+                <input id="clientName" placeholder="Client's Company Name or Individual Name" type="text" />
+                <label for="projectName">Project Name:</label>
+                <input id="projectName" placeholder="e.g., Website Redesign, Mobile App Development" type="text" />
+                <label for="invoiceDate">Date:</label>
+                <input id="invoiceDate" type="date" />
+            </div>
+            <div class="service-item">
+                <h2>Service Details</h2>
+                <label for="serviceDescription">Service Description:</label>
+                <textarea id="serviceDescription" placeholder="e.g., UI/UX Design, Backend Development, Content Writing" rows="3"></textarea>
+                <div class="row">
+                    <div>
+                        <label for="hours">Hours:</label>
+                        <input id="hours" min="0" type="number" value="0" />
+                    </div>
+                    <div>
+                        <label for="rate">Rate per Hour ($):</label>
+                        <input id="rate" min="0" type="number" value="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="ad-inline">
+                <p>Inline Ad (300x250)</p>
+            </div>
+            <div class="total-section">
+                <div class="currency-selection">
+                    <label for="currency">Currency:</label>
+                    <select class="currency-select" id="currency">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - British Pound</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                        <option value="CAD">CAD - Canadian Dollar</option>
+                        <option value="AUD">AUD - Australian Dollar</option>
+                        <option value="PKR">PKR - Pakistani Rupee</option>
+                        <option value="CHF">CHF - Swiss Franc</option>
+                        <option value="CNY">CNY - Chinese Yuan</option>
+                        <option value="SEK">SEK - Swedish Krona</option>
+                        <option value="NZD">NZD - New Zealand Dollar</option>
+                        <option value="MXN">MXN - Mexican Peso</option>
+                        <option value="SGD">SGD - Singapore Dollar</option>
+                        <option value="HKD">HKD - Hong Kong Dollar</option>
+                        <option value="NOK">NOK - Norwegian Krone</option>
+                        <option value="KRW">KRW - South Korean Won</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="BRL">BRL - Brazilian Real</option>
+                        <option value="RUB">RUB - Russian Ruble</option>
+                    </select>
+                </div>
+                <div>Subtotal: <span id="currencySymbol1">$</span><span id="subtotal">0.00</span></div>
+                <div>
+                    <input id="applyTax" type="checkbox" />
+                    <label for="applyTax">Apply Tax/VAT (10%):</label> <span id="currencySymbol2">$</span><span id="taxAmount">0.00</span>
+                </div>
+                <div>Total: <span id="currencySymbol3">$</span><span id="totalCost">0.00</span></div>
+            </div>
+            <div class="ad-inline">
+                <p>Inline Ad (300x250)</p>
+            </div>
+            <div class="payment-info">
+                <h2>Payment Instructions</h2>
+                <ul>
+                    <li>
+                        <strong>PayPal:</strong>
+                        <span contenteditable="true" id="paypalInfo">your.paypal@example.com</span>
+                    </li>
+                    <li>
+                        <strong>Bank Transfer:</strong>
+                        <span contenteditable="true" id="bankInfo">Account Name: Your Name, Bank: Your Bank, Account No: XXXXXXXXXX, SWIFT/BIC: YYYYYYYY</span>
+                    </li>
+                    <li>
+                        <strong>Wise (formerly TransferWise):</strong>
+                        <span contenteditable="true" id="wiseInfo">your.wise.email@example.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="ad-inline">
+                <p>Inline Ad (300x250)</p>
+            </div>
+            <div class="signature">
+                <div class="signature-upload">
+                    <label class="upload-btn" for="signatureUpload">Upload Signature</label>
+                    <input accept="image/*" id="signatureUpload" style="display: none;" type="file" />
+                    <img alt="Digital Signature" class="digital-signature-img" id="digitalSignature" src="https://images.unsplash.com/photo-1593642532842-98d6fd5f8c8d?q=80&amp;w=220&amp;h=120&amp;fit=crop&amp;auto=format&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </div>
+                <p><span id="signatureLine">_________________________</span></p>
+                <p contenteditable="true" id="freelancerName">Freelancer's Name</p>
+            </div>
+            <div class="buttons">
+                <button onclick="calculateTotal()">Calculate Total</button>
+                <button class="save-draft-btn" onclick="saveDraft()">Save Draft</button>
+                <button class="load-draft-btn" onclick="loadDraft()">Load Draft</button>
+                <button class="duplicate-invoice-btn" onclick="duplicateInvoice()">Duplicate Invoice</button>
+                <button class="reset-btn" onclick="resetForm()">Reset Form</button>
+                <button onclick="window.print()">Print / Save as PDF</button>
+            </div>
+        </div>
+        <div class="ad-sidebar right-ad">
+            <p>Right Sidebar Ad (160x600)</p>
+        </div>
+    </div>
+    <div class="ad-footer">
+        <p>Footer Ad Space (728x90)</p>
+    </div>
+    <div id="printComment" style="display: none;">
+        <p style="color: #666666; font-size: 0.9em; margin-top: 50px; text-align: center;">
+            This invoice was generated using the Free Invoice Generator Tool.
+        </p>
+    </div>
+    <script>
+        const clientNameInput = document.getElementById('clientName');
+        const projectNameInput = document.getElementById('projectName');
+        const invoiceDateInput = document.getElementById('invoiceDate');
+        const serviceDescriptionInput = document.getElementById('serviceDescription');
+        const hoursInput = document.getElementById('hours');
+        const rateInput = document.getElementById('rate');
+        const subtotalSpan = document.getElementById('subtotal');
+        const applyTaxCheckbox = document.getElementById('applyTax');
+        const taxAmountSpan = document.getElementById('taxAmount');
+        const totalCostSpan = document.getElementById('totalCost');
+        const currencySelect = document.getElementById('currency');
+        const currencySymbolSpans = [
+            document.getElementById('currencySymbol1'),
+            document.getElementById('currencySymbol2'),
+            document.getElementById('currencySymbol3')
+        ];
+        const defaultLogoSrc = "https://images.unsplash.com/photo-1517292987714-023b86472ed4?q=80&w=180&h=120&fit=crop&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        const defaultSignatureSrc = "https://images.unsplash.com/photo-1593642532842-98d6fd5f8c8d?q=80&w=220&h=120&fit=crop&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+        const exchangeRates = {
+            "USD": 1.0,
+            "EUR": 0.92,
+            "GBP": 0.79,
+            "JPY": 156.0,
+            "CAD": 1.37,
+            "AUD": 1.51,
+            "PKR": 278.0,
+            "CHF": 0.90,
+            "CNY": 7.25,
+            "SEK": 10.80,
+            "NZD": 1.63,
+            "MXN": 17.00,
+            "SGD": 1.35,
+            "HKD": 7.80,
+            "NOK": 10.70,
+            "KRW": 1350.0,
+            "INR": 83.0,
+            "BRL": 5.0,
+            "RUB": 90.0
+        };
+        const currencySymbols = {
+            "USD": "$",
+            "EUR": "€",
+            "GBP": "£",
+            "JPY": "¥",
+            "CAD": "C$",
+            "AUD": "A$",
+            "PKR": "₨"
+        };
+        function updateCurrencySymbols() {
+            const selectedCurrency = currencySelect.value;
+            const symbol = currencySymbols[selectedCurrency] || '$';
+            currencySymbolSpans.forEach(span => {
+                if (span) span.textContent = symbol;
+            });
+        }
+        function calculateTotal() {
+            const hours = parseFloat(hoursInput.value) || 0;
+            const rate = parseFloat(rateInput.value) || 0;
+            let subtotalUSD = hours * rate;
+            let taxUSD = 0;
+            if (applyTaxCheckbox.checked) {
+                taxUSD = subtotalUSD * 0.10;
+            }
+            const totalUSD = subtotalUSD + taxUSD;
+            const selectedCurrency = currencySelect.value;
+            const rateToUSD = exchangeRates[selectedCurrency] || 1.0;
+            const subtotalConverted = subtotalUSD * rateToUSD;
+            const taxConverted = taxUSD * rateToUSD;
+            const totalConverted = totalUSD * rateToUSD;
+            subtotalSpan.textContent = subtotalConverted.toFixed(2);
+            taxAmountSpan.textContent = taxConverted.toFixed(2);
+            totalCostSpan.textContent = totalConverted.toFixed(2);
+            updateCurrencySymbols();
+        }
+        function saveDraft() {
+            const invoiceData = {
+                clientName: clientNameInput.value,
+                projectName: projectNameInput.value,
+                invoiceDate: invoiceDateInput.value,
+                serviceDescription: serviceDescriptionInput.value,
+                hours: hoursInput.value,
+                rate: rateInput.value,
+                applyTax: applyTaxCheckbox.checked,
+                freelancerName: document.getElementById('freelancerName').textContent,
+                paypalInfo: document.getElementById('paypalInfo') ? document.getElementById('paypalInfo').textContent : '',
+                bankInfo: document.getElementById('bankInfo') ? document.getElementById('bankInfo').textContent : '',
+                wiseInfo: document.getElementById('wiseInfo') ? document.getElementById('wiseInfo').textContent : '',
+                freelancerLogoSrc: freelancerLogoImg.src,
+                digitalSignatureSrc: digitalSignatureImg.src,
+                selectedCurrency: currencySelect.value
+            };
+            localStorage.setItem('invoiceDraft', JSON.stringify(invoiceData));
+            alert('Invoice draft saved!');
+        }
+        function loadDraft() {
+            const savedData = localStorage.getItem('invoiceDraft');
+            if (savedData) {
+                const invoiceData = JSON.parse(savedData);
+                clientNameInput.value = invoiceData.clientName;
+                projectNameInput.value = invoiceData.projectName;
+                invoiceDateInput.value = invoiceData.invoiceDate;
+                serviceDescriptionInput.value = invoiceData.serviceDescription;
+                hoursInput.value = invoiceData.hours;
+                rateInput.value = invoiceData.rate;
+                applyTaxCheckbox.checked = invoiceData.applyTax;
+                document.getElementById('freelancerName').textContent = invoiceData.freelancerName;
+                if (document.getElementById('paypalInfo')) document.getElementById('paypalInfo').textContent = invoiceData.paypalInfo;
+                if (document.getElementById('bankInfo')) document.getElementById('bankInfo').textContent = invoiceData.bankInfo;
+                if (document.getElementById('wiseInfo')) document.getElementById('wiseInfo').textContent = invoiceData.wiseInfo;
+                if (invoiceData.freelancerLogoSrc) {
+                    freelancerLogoImg.src = invoiceData.freelancerLogoSrc;
+                }
+                if (invoiceData.digitalSignatureSrc) {
+                    digitalSignatureImg.src = invoiceData.digitalSignatureSrc;
+                }
+                if (invoiceData.selectedCurrency) {
+                    currencySelect.value = invoiceData.selectedCurrency;
+                }
+                calculateTotal();
+                alert('Invoice draft loaded!');
+            } else {
+                alert('No saved draft found.');
+            }
+        }
+        function duplicateInvoice() {
+            serviceDescriptionInput.value = '';
+            hoursInput.value = '0';
+            rateInput.value = '0';
+            invoiceDateInput.value = '';
+            applyTaxCheckbox.checked = false;
+            calculateTotal();
+            alert('Invoice duplicated. Please update date and service details.');
+        }
+        function resetForm() {
+            clientNameInput.value = '';
+            projectNameInput.value = '';
+            invoiceDateInput.valueAsDate = new Date();
+            serviceDescriptionInput.value = '';
+            hoursInput.value = '0';
+            rateInput.value = '0';
+            applyTaxCheckbox.checked = false;
+            document.getElementById('freelancerName').textContent = "Freelancer's Name";
+            if (document.getElementById('paypalInfo')) document.getElementById('paypalInfo').textContent = "your.paypal@example.com";
+            if (document.getElementById('bankInfo')) document.getElementById('bankInfo').textContent = "Account Name: Your Name, Bank: Your Bank, Account No: XXXXXXXXXX, SWIFT/BIC: YYYYYYYY";
+            if (document.getElementById('wiseInfo')) document.getElementById('wiseInfo').textContent = "your.wise.email@example.com";
+            freelancerLogoImg.src = defaultLogoSrc;
+            digitalSignatureImg.src = defaultSignatureSrc;
+            currencySelect.value = 'USD';
+            calculateTotal();
+            alert('Form has been reset to default.');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            invoiceDateInput.valueAsDate = new Date();
+            calculateTotal();
+        });
+        hoursInput.addEventListener('input', calculateTotal);
+        rateInput.addEventListener('input', calculateTotal);
+        applyTaxCheckbox.addEventListener('change', calculateTotal);
+        currencySelect.addEventListener('change', calculateTotal);
+        const logoUploadInput = document.getElementById('logoUpload');
+        const freelancerLogoImg = document.getElementById('freelancerLogo');
+        const signatureUploadInput = document.getElementById('signatureUpload');
+        const digitalSignatureImg = document.getElementById('digitalSignature');
+        logoUploadInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    freelancerLogoImg.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+        signatureUploadInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    digitalSignatureImg.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Create an Invoice Online for Free",
+  "description": "Step-by-step guide to creating a professional invoice online with our free invoice generator tool.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter Client & Project Details",
+      "text": "Fill in client name, project name, date, and service details."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add Hours, Rate & Tax",
+      "text": "Enter working hours, hourly rate, and choose tax/VAT if applicable."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Customize Invoice",
+      "text": "Upload your logo, add a digital signature, and payment instructions (PayPal, Bank, Wise)."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Save & Export",
+      "text": "Save as a draft in browser, duplicate for recurring clients, and export to PDF or print instantly."
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://yourdomain.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://yourdomain.com/tools"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Invoice Generator",
+      "item": "https://yourdomain.com/invoice-generator"
+    }
+  ]
+}
+</script>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4L-9xl5hwc4mTmCV9kU71czdDhyphenhyphen6fP7DqB2_sUNjI8_dAxEPki5u1hGqQyPE9Oy0xQHnGhQJdUSKvzS_m-I96SFTYM9AWPePMYQTR4VyfAQSsezeUYCsgDRU-Qw2IgG3uofqGdS4PhHBe20XLsdIDBVLQSuevJsoJNQ3clXFwv_syQLAt-hwhvp0XNQcg/s1280/Google_AI_Studio_2025-08-19T12_18_06.248Z.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="896" data-original-width="1280" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4L-9xl5hwc4mTmCV9kU71czdDhyphenhyphen6fP7DqB2_sUNjI8_dAxEPki5u1hGqQyPE9Oy0xQHnGhQJdUSKvzS_m-I96SFTYM9AWPePMYQTR4VyfAQSsezeUYCsgDRU-Qw2IgG3uofqGdS4PhHBe20XLsdIDBVLQSuevJsoJNQ3clXFwv_syQLAt-hwhvp0XNQcg/s320/Google_AI_Studio_2025-08-19T12_18_06.248Z.png"/></a></div>
+  
+</body>
+</html>
